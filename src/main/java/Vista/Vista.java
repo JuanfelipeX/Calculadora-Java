@@ -32,10 +32,14 @@ public class Vista extends javax.swing.JFrame {
         txtResult = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         JButtonAvanzado = new javax.swing.JButton();
-        jButtonDivido = new javax.swing.JButton();
+        jButtonIgual = new javax.swing.JButton();
         jButtonC = new javax.swing.JButton();
-        jButtonC2 = new javax.swing.JButton();
+        jButtonElevado = new javax.swing.JButton();
         jButtonPorcentaje = new javax.swing.JButton();
+        jButtonDivido = new javax.swing.JButton();
+        jButtonMultiplicacion = new javax.swing.JButton();
+        jButtonResta = new javax.swing.JButton();
+        jButtonSuma = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculadora Java");
@@ -66,23 +70,26 @@ public class Vista extends javax.swing.JFrame {
         JButtonAvanzado.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnAvanzadoOn.png"))); // NOI18N
         jPanel2.add(JButtonAvanzado, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 100, 50));
 
-        jButtonDivido.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jButtonDivido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
-        jButtonDivido.setText("÷");
-        jButtonDivido.setBorderPainted(false);
-        jButtonDivido.setContentAreaFilled(false);
-        jButtonDivido.setDefaultCapable(false);
-        jButtonDivido.setFocusPainted(false);
-        jButtonDivido.setFocusable(false);
-        jButtonDivido.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonDivido.setRequestFocusEnabled(false);
-        jButtonDivido.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
-        jButtonDivido.addActionListener(new java.awt.event.ActionListener() {
+        jButtonIgual.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonIgual.setForeground(new java.awt.Color(211, 169, 0));
+        jButtonIgual.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonIgual.setText("=");
+        jButtonIgual.setAutoscrolls(true);
+        jButtonIgual.setBorderPainted(false);
+        jButtonIgual.setContentAreaFilled(false);
+        jButtonIgual.setDefaultCapable(false);
+        jButtonIgual.setFocusPainted(false);
+        jButtonIgual.setFocusable(false);
+        jButtonIgual.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonIgual.setRequestFocusEnabled(false);
+        jButtonIgual.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtonIgual.setVerifyInputWhenFocusTarget(false);
+        jButtonIgual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonDividoActionPerformed(evt);
+                jButtonIgualActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonDivido, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 50, 50));
+        jPanel2.add(jButtonIgual, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 50, 50));
 
         jButtonC.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
@@ -102,23 +109,23 @@ public class Vista extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonC, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 50, 50));
 
-        jButtonC2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jButtonC2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
-        jButtonC2.setText("±");
-        jButtonC2.setBorderPainted(false);
-        jButtonC2.setContentAreaFilled(false);
-        jButtonC2.setDefaultCapable(false);
-        jButtonC2.setFocusPainted(false);
-        jButtonC2.setFocusable(false);
-        jButtonC2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonC2.setRequestFocusEnabled(false);
-        jButtonC2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
-        jButtonC2.addActionListener(new java.awt.event.ActionListener() {
+        jButtonElevado.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonElevado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonElevado.setText("^");
+        jButtonElevado.setBorderPainted(false);
+        jButtonElevado.setContentAreaFilled(false);
+        jButtonElevado.setDefaultCapable(false);
+        jButtonElevado.setFocusPainted(false);
+        jButtonElevado.setFocusable(false);
+        jButtonElevado.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonElevado.setRequestFocusEnabled(false);
+        jButtonElevado.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
+        jButtonElevado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonC2ActionPerformed(evt);
+                jButtonElevadoActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonC2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 50, 50));
+        jPanel2.add(jButtonElevado, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 50, 50));
 
         jButtonPorcentaje.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonPorcentaje.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
@@ -138,11 +145,95 @@ public class Vista extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonPorcentaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 50, 50));
 
+        jButtonDivido.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonDivido.setForeground(new java.awt.Color(211, 169, 0));
+        jButtonDivido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonDivido.setText("÷");
+        jButtonDivido.setAutoscrolls(true);
+        jButtonDivido.setBorderPainted(false);
+        jButtonDivido.setContentAreaFilled(false);
+        jButtonDivido.setDefaultCapable(false);
+        jButtonDivido.setFocusPainted(false);
+        jButtonDivido.setFocusable(false);
+        jButtonDivido.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonDivido.setRequestFocusEnabled(false);
+        jButtonDivido.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtonDivido.setVerifyInputWhenFocusTarget(false);
+        jButtonDivido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonDividoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonDivido, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 50, 50));
+
+        jButtonMultiplicacion.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonMultiplicacion.setForeground(new java.awt.Color(211, 169, 0));
+        jButtonMultiplicacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonMultiplicacion.setText("x");
+        jButtonMultiplicacion.setAutoscrolls(true);
+        jButtonMultiplicacion.setBorderPainted(false);
+        jButtonMultiplicacion.setContentAreaFilled(false);
+        jButtonMultiplicacion.setDefaultCapable(false);
+        jButtonMultiplicacion.setFocusPainted(false);
+        jButtonMultiplicacion.setFocusable(false);
+        jButtonMultiplicacion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonMultiplicacion.setRequestFocusEnabled(false);
+        jButtonMultiplicacion.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtonMultiplicacion.setVerifyInputWhenFocusTarget(false);
+        jButtonMultiplicacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonMultiplicacionActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonMultiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 50, 50));
+
+        jButtonResta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonResta.setForeground(new java.awt.Color(211, 169, 0));
+        jButtonResta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonResta.setText("-");
+        jButtonResta.setAutoscrolls(true);
+        jButtonResta.setBorderPainted(false);
+        jButtonResta.setContentAreaFilled(false);
+        jButtonResta.setDefaultCapable(false);
+        jButtonResta.setFocusPainted(false);
+        jButtonResta.setFocusable(false);
+        jButtonResta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonResta.setRequestFocusEnabled(false);
+        jButtonResta.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtonResta.setVerifyInputWhenFocusTarget(false);
+        jButtonResta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonRestaActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonResta, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 50, 50));
+
+        jButtonSuma.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonSuma.setForeground(new java.awt.Color(211, 169, 0));
+        jButtonSuma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonSuma.setText("+");
+        jButtonSuma.setAutoscrolls(true);
+        jButtonSuma.setBorderPainted(false);
+        jButtonSuma.setContentAreaFilled(false);
+        jButtonSuma.setDefaultCapable(false);
+        jButtonSuma.setFocusPainted(false);
+        jButtonSuma.setFocusable(false);
+        jButtonSuma.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonSuma.setRequestFocusEnabled(false);
+        jButtonSuma.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtonSuma.setVerifyInputWhenFocusTarget(false);
+        jButtonSuma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSumaActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonSuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 50, 50));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 373, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
@@ -150,28 +241,44 @@ public class Vista extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 470, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 480, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(383, 700));
+        setSize(new java.awt.Dimension(390, 710));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButtonDividoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDividoActionPerformed
+    private void jButtonIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIgualActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonDividoActionPerformed
+    }//GEN-LAST:event_jButtonIgualActionPerformed
 
     private void jButtonCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonCActionPerformed
 
-    private void jButtonC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonC2ActionPerformed
+    private void jButtonElevadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonElevadoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonC2ActionPerformed
+    }//GEN-LAST:event_jButtonElevadoActionPerformed
 
     private void jButtonPorcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPorcentajeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonPorcentajeActionPerformed
+
+    private void jButtonDividoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDividoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonDividoActionPerformed
+
+    private void jButtonMultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMultiplicacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonMultiplicacionActionPerformed
+
+    private void jButtonRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRestaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonRestaActionPerformed
+
+    private void jButtonSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSumaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonSumaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -211,9 +318,13 @@ public class Vista extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton JButtonAvanzado;
     private javax.swing.JButton jButtonC;
-    private javax.swing.JButton jButtonC2;
     private javax.swing.JButton jButtonDivido;
+    private javax.swing.JButton jButtonElevado;
+    private javax.swing.JButton jButtonIgual;
+    private javax.swing.JButton jButtonMultiplicacion;
     private javax.swing.JButton jButtonPorcentaje;
+    private javax.swing.JButton jButtonResta;
+    private javax.swing.JButton jButtonSuma;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel txtOperation;
