@@ -64,6 +64,7 @@ public class Vista extends javax.swing.JFrame {
         setTitle("Calculadora Java");
         setBackground(new java.awt.Color(51, 51, 51));
         setLocationByPlatform(true);
+        setResizable(false);
         setSize(new java.awt.Dimension(100, 100));
 
         jPanel1.setBackground(new java.awt.Color(21, 13, 91));
