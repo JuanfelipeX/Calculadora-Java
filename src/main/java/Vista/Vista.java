@@ -33,13 +33,32 @@ public class Vista extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         JButtonAvanzado = new javax.swing.JButton();
         jButtonIgual = new javax.swing.JButton();
-        jButtonC = new javax.swing.JButton();
+        jButtonTres = new javax.swing.JButton();
         jButtonElevado = new javax.swing.JButton();
         jButtonPorcentaje = new javax.swing.JButton();
         jButtonDivido = new javax.swing.JButton();
-        jButtonMultiplicacion = new javax.swing.JButton();
+        jButtonFactorial = new javax.swing.JButton();
         jButtonResta = new javax.swing.JButton();
         jButtonSuma = new javax.swing.JButton();
+        jButtonC = new javax.swing.JButton();
+        jButtonNueve = new javax.swing.JButton();
+        jButtonDos = new javax.swing.JButton();
+        jButtonPunto = new javax.swing.JButton();
+        jButtonCuatro = new javax.swing.JButton();
+        jButtonCinco = new javax.swing.JButton();
+        jButtonSeis = new javax.swing.JButton();
+        jButtonSiete = new javax.swing.JButton();
+        jButtonOcho = new javax.swing.JButton();
+        jButtonUno = new javax.swing.JButton();
+        jButtonCero = new javax.swing.JButton();
+        jButtonMultiplicacion1 = new javax.swing.JButton();
+        jButtonRaiz = new javax.swing.JButton();
+        jButtonParentesisIzquierdo = new javax.swing.JButton();
+        jButtonParentesisDerecho = new javax.swing.JButton();
+        jButtonln = new javax.swing.JButton();
+        jButtonLog = new javax.swing.JButton();
+        jButtonPi = new javax.swing.JButton();
+        jButtone = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculadora Java");
@@ -91,23 +110,24 @@ public class Vista extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonIgual, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 50, 50));
 
-        jButtonC.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jButtonC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
-        jButtonC.setText("C");
-        jButtonC.setAutoscrolls(true);
-        jButtonC.setBorderPainted(false);
-        jButtonC.setContentAreaFilled(false);
-        jButtonC.setDefaultCapable(false);
-        jButtonC.setFocusPainted(false);
-        jButtonC.setFocusable(false);
-        jButtonC.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonC.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
-        jButtonC.addActionListener(new java.awt.event.ActionListener() {
+        jButtonTres.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonTres.setForeground(new java.awt.Color(0, 205, 205));
+        jButtonTres.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonTres.setText("3");
+        jButtonTres.setAutoscrolls(true);
+        jButtonTres.setBorderPainted(false);
+        jButtonTres.setContentAreaFilled(false);
+        jButtonTres.setDefaultCapable(false);
+        jButtonTres.setFocusPainted(false);
+        jButtonTres.setFocusable(false);
+        jButtonTres.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonTres.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
+        jButtonTres.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonCActionPerformed(evt);
+                jButtonTresActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonC, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 50, 50));
+        jPanel2.add(jButtonTres, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 50, 50));
 
         jButtonElevado.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonElevado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
@@ -119,7 +139,7 @@ public class Vista extends javax.swing.JFrame {
         jButtonElevado.setFocusable(false);
         jButtonElevado.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButtonElevado.setRequestFocusEnabled(false);
-        jButtonElevado.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
+        jButtonElevado.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnGrisOn.png"))); // NOI18N
         jButtonElevado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonElevadoActionPerformed(evt);
@@ -137,7 +157,7 @@ public class Vista extends javax.swing.JFrame {
         jButtonPorcentaje.setFocusable(false);
         jButtonPorcentaje.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButtonPorcentaje.setRequestFocusEnabled(false);
-        jButtonPorcentaje.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
+        jButtonPorcentaje.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnGrisOn.png"))); // NOI18N
         jButtonPorcentaje.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonPorcentajeActionPerformed(evt);
@@ -166,26 +186,26 @@ public class Vista extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonDivido, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 50, 50));
 
-        jButtonMultiplicacion.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jButtonMultiplicacion.setForeground(new java.awt.Color(211, 169, 0));
-        jButtonMultiplicacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
-        jButtonMultiplicacion.setText("x");
-        jButtonMultiplicacion.setAutoscrolls(true);
-        jButtonMultiplicacion.setBorderPainted(false);
-        jButtonMultiplicacion.setContentAreaFilled(false);
-        jButtonMultiplicacion.setDefaultCapable(false);
-        jButtonMultiplicacion.setFocusPainted(false);
-        jButtonMultiplicacion.setFocusable(false);
-        jButtonMultiplicacion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonMultiplicacion.setRequestFocusEnabled(false);
-        jButtonMultiplicacion.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
-        jButtonMultiplicacion.setVerifyInputWhenFocusTarget(false);
-        jButtonMultiplicacion.addActionListener(new java.awt.event.ActionListener() {
+        jButtonFactorial.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonFactorial.setForeground(new java.awt.Color(211, 169, 0));
+        jButtonFactorial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonFactorial.setText("!");
+        jButtonFactorial.setAutoscrolls(true);
+        jButtonFactorial.setBorderPainted(false);
+        jButtonFactorial.setContentAreaFilled(false);
+        jButtonFactorial.setDefaultCapable(false);
+        jButtonFactorial.setFocusPainted(false);
+        jButtonFactorial.setFocusable(false);
+        jButtonFactorial.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonFactorial.setRequestFocusEnabled(false);
+        jButtonFactorial.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtonFactorial.setVerifyInputWhenFocusTarget(false);
+        jButtonFactorial.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonMultiplicacionActionPerformed(evt);
+                jButtonFactorialActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonMultiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 50, 50));
+        jPanel2.add(jButtonFactorial, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 50, 50));
 
         jButtonResta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonResta.setForeground(new java.awt.Color(211, 169, 0));
@@ -229,6 +249,382 @@ public class Vista extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonSuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 50, 50));
 
+        jButtonC.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonC.setText("C");
+        jButtonC.setAutoscrolls(true);
+        jButtonC.setBorderPainted(false);
+        jButtonC.setContentAreaFilled(false);
+        jButtonC.setDefaultCapable(false);
+        jButtonC.setFocusPainted(false);
+        jButtonC.setFocusable(false);
+        jButtonC.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonC.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnGrisOn.png"))); // NOI18N
+        jButtonC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonC, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 50, 50));
+
+        jButtonNueve.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonNueve.setForeground(new java.awt.Color(0, 205, 205));
+        jButtonNueve.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonNueve.setText("9");
+        jButtonNueve.setAutoscrolls(true);
+        jButtonNueve.setBorderPainted(false);
+        jButtonNueve.setContentAreaFilled(false);
+        jButtonNueve.setDefaultCapable(false);
+        jButtonNueve.setFocusPainted(false);
+        jButtonNueve.setFocusable(false);
+        jButtonNueve.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonNueve.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
+        jButtonNueve.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonNueveActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonNueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, 50, 50));
+
+        jButtonDos.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonDos.setForeground(new java.awt.Color(0, 205, 205));
+        jButtonDos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonDos.setText("2");
+        jButtonDos.setAutoscrolls(true);
+        jButtonDos.setBorderPainted(false);
+        jButtonDos.setContentAreaFilled(false);
+        jButtonDos.setDefaultCapable(false);
+        jButtonDos.setFocusPainted(false);
+        jButtonDos.setFocusable(false);
+        jButtonDos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonDos.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
+        jButtonDos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonDosActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonDos, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 50, 50));
+
+        jButtonPunto.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonPunto.setForeground(new java.awt.Color(0, 205, 205));
+        jButtonPunto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonPunto.setText(".");
+        jButtonPunto.setAutoscrolls(true);
+        jButtonPunto.setBorderPainted(false);
+        jButtonPunto.setContentAreaFilled(false);
+        jButtonPunto.setDefaultCapable(false);
+        jButtonPunto.setFocusPainted(false);
+        jButtonPunto.setFocusable(false);
+        jButtonPunto.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonPunto.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
+        jButtonPunto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPuntoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonPunto, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 50, 50));
+
+        jButtonCuatro.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonCuatro.setForeground(new java.awt.Color(0, 205, 205));
+        jButtonCuatro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonCuatro.setText("4");
+        jButtonCuatro.setAutoscrolls(true);
+        jButtonCuatro.setBorderPainted(false);
+        jButtonCuatro.setContentAreaFilled(false);
+        jButtonCuatro.setDefaultCapable(false);
+        jButtonCuatro.setFocusPainted(false);
+        jButtonCuatro.setFocusable(false);
+        jButtonCuatro.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonCuatro.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
+        jButtonCuatro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCuatroActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonCuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 50, 50));
+
+        jButtonCinco.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonCinco.setForeground(new java.awt.Color(0, 205, 205));
+        jButtonCinco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonCinco.setText("5");
+        jButtonCinco.setAutoscrolls(true);
+        jButtonCinco.setBorderPainted(false);
+        jButtonCinco.setContentAreaFilled(false);
+        jButtonCinco.setDefaultCapable(false);
+        jButtonCinco.setFocusPainted(false);
+        jButtonCinco.setFocusable(false);
+        jButtonCinco.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonCinco.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
+        jButtonCinco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCincoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonCinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 50, 50));
+
+        jButtonSeis.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonSeis.setForeground(new java.awt.Color(0, 205, 205));
+        jButtonSeis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonSeis.setText("6");
+        jButtonSeis.setAutoscrolls(true);
+        jButtonSeis.setBorderPainted(false);
+        jButtonSeis.setContentAreaFilled(false);
+        jButtonSeis.setDefaultCapable(false);
+        jButtonSeis.setFocusPainted(false);
+        jButtonSeis.setFocusable(false);
+        jButtonSeis.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonSeis.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
+        jButtonSeis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSeisActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonSeis, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 50, 50));
+
+        jButtonSiete.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonSiete.setForeground(new java.awt.Color(0, 205, 205));
+        jButtonSiete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonSiete.setText("7");
+        jButtonSiete.setAutoscrolls(true);
+        jButtonSiete.setBorderPainted(false);
+        jButtonSiete.setContentAreaFilled(false);
+        jButtonSiete.setDefaultCapable(false);
+        jButtonSiete.setFocusPainted(false);
+        jButtonSiete.setFocusable(false);
+        jButtonSiete.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonSiete.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
+        jButtonSiete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSieteActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonSiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 50, 50));
+
+        jButtonOcho.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonOcho.setForeground(new java.awt.Color(0, 205, 205));
+        jButtonOcho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonOcho.setText("8");
+        jButtonOcho.setAutoscrolls(true);
+        jButtonOcho.setBorderPainted(false);
+        jButtonOcho.setContentAreaFilled(false);
+        jButtonOcho.setDefaultCapable(false);
+        jButtonOcho.setFocusPainted(false);
+        jButtonOcho.setFocusable(false);
+        jButtonOcho.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonOcho.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
+        jButtonOcho.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonOchoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonOcho, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, 50, 50));
+
+        jButtonUno.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonUno.setForeground(new java.awt.Color(0, 205, 205));
+        jButtonUno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonUno.setText("1");
+        jButtonUno.setAutoscrolls(true);
+        jButtonUno.setBorderPainted(false);
+        jButtonUno.setContentAreaFilled(false);
+        jButtonUno.setDefaultCapable(false);
+        jButtonUno.setFocusPainted(false);
+        jButtonUno.setFocusable(false);
+        jButtonUno.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonUno.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
+        jButtonUno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonUnoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 50, 50));
+
+        jButtonCero.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonCero.setForeground(new java.awt.Color(0, 205, 205));
+        jButtonCero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonCero.setText("0");
+        jButtonCero.setAutoscrolls(true);
+        jButtonCero.setBorderPainted(false);
+        jButtonCero.setContentAreaFilled(false);
+        jButtonCero.setDefaultCapable(false);
+        jButtonCero.setFocusPainted(false);
+        jButtonCero.setFocusable(false);
+        jButtonCero.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonCero.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnCOn.png"))); // NOI18N
+        jButtonCero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCeroActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonCero, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, 50, 50));
+
+        jButtonMultiplicacion1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonMultiplicacion1.setForeground(new java.awt.Color(211, 169, 0));
+        jButtonMultiplicacion1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonMultiplicacion1.setText("x");
+        jButtonMultiplicacion1.setAutoscrolls(true);
+        jButtonMultiplicacion1.setBorderPainted(false);
+        jButtonMultiplicacion1.setContentAreaFilled(false);
+        jButtonMultiplicacion1.setDefaultCapable(false);
+        jButtonMultiplicacion1.setFocusPainted(false);
+        jButtonMultiplicacion1.setFocusable(false);
+        jButtonMultiplicacion1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonMultiplicacion1.setRequestFocusEnabled(false);
+        jButtonMultiplicacion1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtonMultiplicacion1.setVerifyInputWhenFocusTarget(false);
+        jButtonMultiplicacion1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonMultiplicacion1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonMultiplicacion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 50, 50));
+
+        jButtonRaiz.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonRaiz.setForeground(new java.awt.Color(211, 169, 0));
+        jButtonRaiz.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonRaiz.setText(" √");
+        jButtonRaiz.setAutoscrolls(true);
+        jButtonRaiz.setBorderPainted(false);
+        jButtonRaiz.setContentAreaFilled(false);
+        jButtonRaiz.setDefaultCapable(false);
+        jButtonRaiz.setFocusPainted(false);
+        jButtonRaiz.setFocusable(false);
+        jButtonRaiz.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonRaiz.setRequestFocusEnabled(false);
+        jButtonRaiz.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtonRaiz.setVerifyInputWhenFocusTarget(false);
+        jButtonRaiz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonRaizActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonRaiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 50, 50));
+
+        jButtonParentesisIzquierdo.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonParentesisIzquierdo.setForeground(new java.awt.Color(211, 169, 0));
+        jButtonParentesisIzquierdo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonParentesisIzquierdo.setText("(");
+        jButtonParentesisIzquierdo.setAutoscrolls(true);
+        jButtonParentesisIzquierdo.setBorderPainted(false);
+        jButtonParentesisIzquierdo.setContentAreaFilled(false);
+        jButtonParentesisIzquierdo.setDefaultCapable(false);
+        jButtonParentesisIzquierdo.setFocusPainted(false);
+        jButtonParentesisIzquierdo.setFocusable(false);
+        jButtonParentesisIzquierdo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonParentesisIzquierdo.setRequestFocusEnabled(false);
+        jButtonParentesisIzquierdo.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtonParentesisIzquierdo.setVerifyInputWhenFocusTarget(false);
+        jButtonParentesisIzquierdo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonParentesisIzquierdoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonParentesisIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 50, 50));
+
+        jButtonParentesisDerecho.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonParentesisDerecho.setForeground(new java.awt.Color(211, 169, 0));
+        jButtonParentesisDerecho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonParentesisDerecho.setText(")");
+        jButtonParentesisDerecho.setAutoscrolls(true);
+        jButtonParentesisDerecho.setBorderPainted(false);
+        jButtonParentesisDerecho.setContentAreaFilled(false);
+        jButtonParentesisDerecho.setDefaultCapable(false);
+        jButtonParentesisDerecho.setFocusPainted(false);
+        jButtonParentesisDerecho.setFocusable(false);
+        jButtonParentesisDerecho.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonParentesisDerecho.setRequestFocusEnabled(false);
+        jButtonParentesisDerecho.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtonParentesisDerecho.setVerifyInputWhenFocusTarget(false);
+        jButtonParentesisDerecho.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonParentesisDerechoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonParentesisDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 50, 50));
+
+        jButtonln.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jButtonln.setForeground(new java.awt.Color(211, 169, 0));
+        jButtonln.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonln.setText("ln");
+        jButtonln.setAutoscrolls(true);
+        jButtonln.setBorderPainted(false);
+        jButtonln.setContentAreaFilled(false);
+        jButtonln.setDefaultCapable(false);
+        jButtonln.setFocusPainted(false);
+        jButtonln.setFocusable(false);
+        jButtonln.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonln.setRequestFocusEnabled(false);
+        jButtonln.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtonln.setVerifyInputWhenFocusTarget(false);
+        jButtonln.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonlnActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonln, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 50, 50));
+
+        jButtonLog.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
+        jButtonLog.setForeground(new java.awt.Color(211, 169, 0));
+        jButtonLog.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonLog.setText("Log");
+        jButtonLog.setAutoscrolls(true);
+        jButtonLog.setBorderPainted(false);
+        jButtonLog.setContentAreaFilled(false);
+        jButtonLog.setDefaultCapable(false);
+        jButtonLog.setFocusPainted(false);
+        jButtonLog.setFocusable(false);
+        jButtonLog.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonLog.setRequestFocusEnabled(false);
+        jButtonLog.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtonLog.setVerifyInputWhenFocusTarget(false);
+        jButtonLog.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonLogActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 50, 50));
+
+        jButtonPi.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonPi.setForeground(new java.awt.Color(211, 169, 0));
+        jButtonPi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonPi.setText("π");
+        jButtonPi.setAutoscrolls(true);
+        jButtonPi.setBorderPainted(false);
+        jButtonPi.setContentAreaFilled(false);
+        jButtonPi.setDefaultCapable(false);
+        jButtonPi.setFocusPainted(false);
+        jButtonPi.setFocusable(false);
+        jButtonPi.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonPi.setRequestFocusEnabled(false);
+        jButtonPi.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtonPi.setVerifyInputWhenFocusTarget(false);
+        jButtonPi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPiActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonPi, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 50, 50));
+
+        jButtone.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtone.setForeground(new java.awt.Color(211, 169, 0));
+        jButtone.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtone.setText("e");
+        jButtone.setAutoscrolls(true);
+        jButtone.setBorderPainted(false);
+        jButtone.setContentAreaFilled(false);
+        jButtone.setDefaultCapable(false);
+        jButtone.setFocusPainted(false);
+        jButtone.setFocusable(false);
+        jButtone.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtone.setRequestFocusEnabled(false);
+        jButtone.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtone.setVerifyInputWhenFocusTarget(false);
+        jButtone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtoneActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtone, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 50, 50));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -241,10 +637,10 @@ public class Vista extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 480, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(390, 710));
+        setSize(new java.awt.Dimension(390, 520));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -252,9 +648,9 @@ public class Vista extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonIgualActionPerformed
 
-    private void jButtonCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCActionPerformed
+    private void jButtonTresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTresActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonCActionPerformed
+    }//GEN-LAST:event_jButtonTresActionPerformed
 
     private void jButtonElevadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonElevadoActionPerformed
         // TODO add your handling code here:
@@ -268,9 +664,9 @@ public class Vista extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonDividoActionPerformed
 
-    private void jButtonMultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMultiplicacionActionPerformed
+    private void jButtonFactorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFactorialActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonMultiplicacionActionPerformed
+    }//GEN-LAST:event_jButtonFactorialActionPerformed
 
     private void jButtonRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRestaActionPerformed
         // TODO add your handling code here:
@@ -279,6 +675,82 @@ public class Vista extends javax.swing.JFrame {
     private void jButtonSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSumaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonSumaActionPerformed
+
+    private void jButtonCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCActionPerformed
+
+    private void jButtonNueveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNueveActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonNueveActionPerformed
+
+    private void jButtonDosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonDosActionPerformed
+
+    private void jButtonPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPuntoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonPuntoActionPerformed
+
+    private void jButtonCuatroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCuatroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCuatroActionPerformed
+
+    private void jButtonCincoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCincoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCincoActionPerformed
+
+    private void jButtonSeisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSeisActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonSeisActionPerformed
+
+    private void jButtonSieteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSieteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonSieteActionPerformed
+
+    private void jButtonOchoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOchoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonOchoActionPerformed
+
+    private void jButtonUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonUnoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonUnoActionPerformed
+
+    private void jButtonCeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCeroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCeroActionPerformed
+
+    private void jButtonMultiplicacion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMultiplicacion1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonMultiplicacion1ActionPerformed
+
+    private void jButtonRaizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRaizActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonRaizActionPerformed
+
+    private void jButtonParentesisIzquierdoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonParentesisIzquierdoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonParentesisIzquierdoActionPerformed
+
+    private void jButtonParentesisDerechoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonParentesisDerechoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonParentesisDerechoActionPerformed
+
+    private void jButtonlnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonlnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonlnActionPerformed
+
+    private void jButtonLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLogActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonLogActionPerformed
+
+    private void jButtonPiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonPiActionPerformed
+
+    private void jButtoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtoneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtoneActionPerformed
 
     /**
      * @param args the command line arguments
@@ -318,13 +790,32 @@ public class Vista extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton JButtonAvanzado;
     private javax.swing.JButton jButtonC;
+    private javax.swing.JButton jButtonCero;
+    private javax.swing.JButton jButtonCinco;
+    private javax.swing.JButton jButtonCuatro;
     private javax.swing.JButton jButtonDivido;
+    private javax.swing.JButton jButtonDos;
     private javax.swing.JButton jButtonElevado;
+    private javax.swing.JButton jButtonFactorial;
     private javax.swing.JButton jButtonIgual;
-    private javax.swing.JButton jButtonMultiplicacion;
+    private javax.swing.JButton jButtonLog;
+    private javax.swing.JButton jButtonMultiplicacion1;
+    private javax.swing.JButton jButtonNueve;
+    private javax.swing.JButton jButtonOcho;
+    private javax.swing.JButton jButtonParentesisDerecho;
+    private javax.swing.JButton jButtonParentesisIzquierdo;
+    private javax.swing.JButton jButtonPi;
     private javax.swing.JButton jButtonPorcentaje;
+    private javax.swing.JButton jButtonPunto;
+    private javax.swing.JButton jButtonRaiz;
     private javax.swing.JButton jButtonResta;
+    private javax.swing.JButton jButtonSeis;
+    private javax.swing.JButton jButtonSiete;
     private javax.swing.JButton jButtonSuma;
+    private javax.swing.JButton jButtonTres;
+    private javax.swing.JButton jButtonUno;
+    private javax.swing.JButton jButtone;
+    private javax.swing.JButton jButtonln;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel txtOperation;
