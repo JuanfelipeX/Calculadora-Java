@@ -73,6 +73,11 @@ public class Vista extends javax.swing.JFrame {
         JButtonAvanzado.setFocusPainted(false);
         JButtonAvanzado.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         JButtonAvanzado.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnAvanzadoOn.png"))); // NOI18N
+        JButtonAvanzado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JButtonAvanzadoActionPerformed(evt);
+            }
+        });
         jPanel2.add(JButtonAvanzado, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 100, 50));
 
         jButtonIgual.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -634,70 +639,84 @@ public class Vista extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonIgualActionPerformed
 
-    private void jButtonTresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTresActionPerformed
+    private void jButtonPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPuntoActionPerformed
         // TODO add your handling code here:
-        addNumber("3");
-    }//GEN-LAST:event_jButtonTresActionPerformed
+    }//GEN-LAST:event_jButtonPuntoActionPerformed
 
-    private void jButtonElevadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonElevadoActionPerformed
+    private void jButtonCeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCeroActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonElevadoActionPerformed
+        addNumber("0");
+    }//GEN-LAST:event_jButtonCeroActionPerformed
 
-    private void jButtonPorcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPorcentajeActionPerformed
+    private void jButtoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtoneActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonPorcentajeActionPerformed
+    }//GEN-LAST:event_jButtoneActionPerformed
 
-    private void jButtonDividoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDividoActionPerformed
+    private void jButtonPiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonDividoActionPerformed
+    }//GEN-LAST:event_jButtonPiActionPerformed
 
-    private void jButtonFactorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFactorialActionPerformed
+    private void jButtonlnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonlnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonFactorialActionPerformed
+    }//GEN-LAST:event_jButtonlnActionPerformed
 
-    private void jButtonRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRestaActionPerformed
+    private void jButtonLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLogActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonRestaActionPerformed
-
-    private void jButtonSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSumaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonSumaActionPerformed
-
-    private void jButtonCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCActionPerformed
-        // TODO add your handling code here:
-        txtOperation.setText("");
-        txtResult.setText("");
-        
-    }//GEN-LAST:event_jButtonCActionPerformed
-
-    private void jButtonNueveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNueveActionPerformed
-        // TODO add your handling code here:
-        addNumber("9");
-    }//GEN-LAST:event_jButtonNueveActionPerformed
+    }//GEN-LAST:event_jButtonLogActionPerformed
 
     private void jButtonDosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDosActionPerformed
         // TODO add your handling code here:}
         addNumber("2");
     }//GEN-LAST:event_jButtonDosActionPerformed
 
-    private void jButtonPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPuntoActionPerformed
+    private void jButtonUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonUnoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonPuntoActionPerformed
+        addNumber("1");
+    }//GEN-LAST:event_jButtonUnoActionPerformed
 
-    private void jButtonCuatroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCuatroActionPerformed
+    private void jButtonTresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTresActionPerformed
         // TODO add your handling code here:
-        addNumber("4");
-    }//GEN-LAST:event_jButtonCuatroActionPerformed
+        addNumber("3");
+    }//GEN-LAST:event_jButtonTresActionPerformed
+
+    private void jButtonSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSumaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonSumaActionPerformed
+
+    private void jButtonRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRestaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonRestaActionPerformed
+
+    private void jButtonSeisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSeisActionPerformed
+        // TODO add your handling code here:
+        addNumber("6");
+    }//GEN-LAST:event_jButtonSeisActionPerformed
 
     private void jButtonCincoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCincoActionPerformed
         // TODO add your handling code here:
         addNumber("5");
     }//GEN-LAST:event_jButtonCincoActionPerformed
 
-    private void jButtonSeisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSeisActionPerformed
+    private void jButtonCuatroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCuatroActionPerformed
         // TODO add your handling code here:
-        addNumber("6");
-    }//GEN-LAST:event_jButtonSeisActionPerformed
+        addNumber("4");
+    }//GEN-LAST:event_jButtonCuatroActionPerformed
+
+    private void jButtonParentesisDerechoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonParentesisDerechoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonParentesisDerechoActionPerformed
+
+    private void jButtonParentesisIzquierdoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonParentesisIzquierdoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonParentesisIzquierdoActionPerformed
+
+    private void jButtonRaizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRaizActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonRaizActionPerformed
+
+    private void jButtonFactorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFactorialActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonFactorialActionPerformed
 
     private void jButtonSieteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSieteActionPerformed
         // TODO add your handling code here:
@@ -709,47 +728,36 @@ public class Vista extends javax.swing.JFrame {
         addNumber("8");
     }//GEN-LAST:event_jButtonOchoActionPerformed
 
-    private void jButtonUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonUnoActionPerformed
+    private void jButtonNueveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNueveActionPerformed
         // TODO add your handling code here:
-        addNumber("1");
-    }//GEN-LAST:event_jButtonUnoActionPerformed
-
-    private void jButtonCeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCeroActionPerformed
-        // TODO add your handling code here:
-        addNumber("0");
-    }//GEN-LAST:event_jButtonCeroActionPerformed
+        addNumber("9");
+    }//GEN-LAST:event_jButtonNueveActionPerformed
 
     private void jButtonMultiplicacion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMultiplicacion1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonMultiplicacion1ActionPerformed
 
-    private void jButtonRaizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRaizActionPerformed
+    private void jButtonDividoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDividoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonRaizActionPerformed
+    }//GEN-LAST:event_jButtonDividoActionPerformed
 
-    private void jButtonParentesisIzquierdoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonParentesisIzquierdoActionPerformed
+    private void jButtonPorcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPorcentajeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonParentesisIzquierdoActionPerformed
+    }//GEN-LAST:event_jButtonPorcentajeActionPerformed
 
-    private void jButtonParentesisDerechoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonParentesisDerechoActionPerformed
+    private void jButtonElevadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonElevadoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonParentesisDerechoActionPerformed
+    }//GEN-LAST:event_jButtonElevadoActionPerformed
 
-    private void jButtonlnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonlnActionPerformed
+    private void jButtonCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonlnActionPerformed
+        txtOperation.setText("");
+        txtResult.setText("");
+    }//GEN-LAST:event_jButtonCActionPerformed
 
-    private void jButtonLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLogActionPerformed
+    private void JButtonAvanzadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JButtonAvanzadoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonLogActionPerformed
-
-    private void jButtonPiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPiActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonPiActionPerformed
-
-    private void jButtoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtoneActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtoneActionPerformed
+    }//GEN-LAST:event_JButtonAvanzadoActionPerformed
 
   
     public static void main(String args[]) {
