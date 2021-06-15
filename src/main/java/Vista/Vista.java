@@ -1,13 +1,21 @@
 package Vista;
 
+import java.awt.Color;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+
 public class Vista extends javax.swing.JFrame {
+
+    ScriptEngineManager sem = new ScriptEngineManager(); //utlizamos el motor de JavaScript
+    ScriptEngine se = sem.getEngineByName("JavaScript");
 
     public Vista() {
         initComponents();
-        //setLocationRelativeTo(null); centra el programa
+        setLocationRelativeTo(null);// centra el programa
     }
 
-  
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -15,6 +23,7 @@ public class Vista extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         txtOperation = new javax.swing.JLabel();
         txtResult = new javax.swing.JLabel();
+        jButtonCambioColor = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         JButtonAvanzado = new javax.swing.JButton();
         jButtonIgual = new javax.swing.JButton();
@@ -25,7 +34,7 @@ public class Vista extends javax.swing.JFrame {
         jButtonFactorial = new javax.swing.JButton();
         jButtonResta = new javax.swing.JButton();
         jButtonSuma = new javax.swing.JButton();
-        jButtonC = new javax.swing.JButton();
+        jButtonCE = new javax.swing.JButton();
         jButtonNueve = new javax.swing.JButton();
         jButtonDos = new javax.swing.JButton();
         jButtonPunto = new javax.swing.JButton();
@@ -36,7 +45,7 @@ public class Vista extends javax.swing.JFrame {
         jButtonOcho = new javax.swing.JButton();
         jButtonUno = new javax.swing.JButton();
         jButtonCero = new javax.swing.JButton();
-        jButtonMultiplicacion1 = new javax.swing.JButton();
+        jButtonMultiplicacion = new javax.swing.JButton();
         jButtonRaiz = new javax.swing.JButton();
         jButtonParentesisIzquierdo = new javax.swing.JButton();
         jButtonParentesisDerecho = new javax.swing.JButton();
@@ -44,6 +53,7 @@ public class Vista extends javax.swing.JFrame {
         jButtonLog = new javax.swing.JButton();
         jButtonPi = new javax.swing.JButton();
         jButtone = new javax.swing.JButton();
+        jButtonC = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculadora Java");
@@ -65,15 +75,31 @@ public class Vista extends javax.swing.JFrame {
         txtResult.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jPanel1.add(txtResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 300, 60));
 
+        jButtonCambioColor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDark.png"))); // NOI18N
+        jButtonCambioColor.setBorderPainted(false);
+        jButtonCambioColor.setContentAreaFilled(false);
+        jButtonCambioColor.setDefaultCapable(false);
+        jButtonCambioColor.setFocusPainted(false);
+        jButtonCambioColor.setFocusable(false);
+        jButtonCambioColor.setRequestFocusEnabled(false);
+        jButtonCambioColor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCambioColorActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButtonCambioColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 45, 20));
+
         jPanel2.setBackground(new java.awt.Color(12, 9, 65));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        JButtonAvanzado.setFont(new java.awt.Font("DejaVu Sans Light", 3, 14)); // NOI18N
+        JButtonAvanzado.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
         JButtonAvanzado.setForeground(new java.awt.Color(255, 255, 255));
         JButtonAvanzado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnAvanzado.jpg"))); // NOI18N
         JButtonAvanzado.setText("AVANZADO ");
         JButtonAvanzado.setActionCommand("Avanzado");
         JButtonAvanzado.setBorder(null);
+        JButtonAvanzado.setBorderPainted(false);
+        JButtonAvanzado.setContentAreaFilled(false);
         JButtonAvanzado.setFocusPainted(false);
         JButtonAvanzado.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         JButtonAvanzado.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnAvanzadoOn.png"))); // NOI18N
@@ -246,24 +272,24 @@ public class Vista extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonSuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, 50, 50));
 
-        jButtonC.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jButtonC.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
-        jButtonC.setText("C");
-        jButtonC.setAutoscrolls(true);
-        jButtonC.setBorderPainted(false);
-        jButtonC.setContentAreaFilled(false);
-        jButtonC.setDefaultCapable(false);
-        jButtonC.setFocusPainted(false);
-        jButtonC.setFocusable(false);
-        jButtonC.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonC.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnGrisOn.png"))); // NOI18N
-        jButtonC.addActionListener(new java.awt.event.ActionListener() {
+        jButtonCE.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jButtonCE.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonCE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonCE.setText("CE");
+        jButtonCE.setAutoscrolls(true);
+        jButtonCE.setBorderPainted(false);
+        jButtonCE.setContentAreaFilled(false);
+        jButtonCE.setDefaultCapable(false);
+        jButtonCE.setFocusPainted(false);
+        jButtonCE.setFocusable(false);
+        jButtonCE.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonCE.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnGrisOn.png"))); // NOI18N
+        jButtonCE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonCActionPerformed(evt);
+                jButtonCEActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonC, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 50, 50));
+        jPanel2.add(jButtonCE, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 50, 50));
 
         jButtonNueve.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonNueve.setForeground(new java.awt.Color(0, 205, 205));
@@ -455,26 +481,26 @@ public class Vista extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonCero, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, 50, 50));
 
-        jButtonMultiplicacion1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jButtonMultiplicacion1.setForeground(new java.awt.Color(211, 169, 0));
-        jButtonMultiplicacion1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
-        jButtonMultiplicacion1.setText("x");
-        jButtonMultiplicacion1.setAutoscrolls(true);
-        jButtonMultiplicacion1.setBorderPainted(false);
-        jButtonMultiplicacion1.setContentAreaFilled(false);
-        jButtonMultiplicacion1.setDefaultCapable(false);
-        jButtonMultiplicacion1.setFocusPainted(false);
-        jButtonMultiplicacion1.setFocusable(false);
-        jButtonMultiplicacion1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonMultiplicacion1.setRequestFocusEnabled(false);
-        jButtonMultiplicacion1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
-        jButtonMultiplicacion1.setVerifyInputWhenFocusTarget(false);
-        jButtonMultiplicacion1.addActionListener(new java.awt.event.ActionListener() {
+        jButtonMultiplicacion.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonMultiplicacion.setForeground(new java.awt.Color(211, 169, 0));
+        jButtonMultiplicacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonMultiplicacion.setText("x");
+        jButtonMultiplicacion.setAutoscrolls(true);
+        jButtonMultiplicacion.setBorderPainted(false);
+        jButtonMultiplicacion.setContentAreaFilled(false);
+        jButtonMultiplicacion.setDefaultCapable(false);
+        jButtonMultiplicacion.setFocusPainted(false);
+        jButtonMultiplicacion.setFocusable(false);
+        jButtonMultiplicacion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonMultiplicacion.setRequestFocusEnabled(false);
+        jButtonMultiplicacion.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnDoradoOn.png"))); // NOI18N
+        jButtonMultiplicacion.setVerifyInputWhenFocusTarget(false);
+        jButtonMultiplicacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonMultiplicacion1ActionPerformed(evt);
+                jButtonMultiplicacionActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonMultiplicacion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 70, 50, 50));
+        jPanel2.add(jButtonMultiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 70, 50, 50));
 
         jButtonRaiz.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonRaiz.setForeground(new java.awt.Color(211, 169, 0));
@@ -623,6 +649,25 @@ public class Vista extends javax.swing.JFrame {
         });
         jPanel2.add(jButtone, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 50, 50));
 
+        jButtonC.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonC.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonC.setText("C");
+        jButtonC.setAutoscrolls(true);
+        jButtonC.setBorderPainted(false);
+        jButtonC.setContentAreaFilled(false);
+        jButtonC.setDefaultCapable(false);
+        jButtonC.setFocusPainted(false);
+        jButtonC.setFocusable(false);
+        jButtonC.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonC.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnGrisOn.png"))); // NOI18N
+        jButtonC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButtonC, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 50, 50));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -653,6 +698,12 @@ public class Vista extends javax.swing.JFrame {
 
     private void jButtonIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIgualActionPerformed
         // TODO add your handling code here:
+        try {
+            String resultado = se.eval(txtOperation.getText()).toString();
+            txtResult.setText(resultado);
+            txtOperation.setText("");
+        } catch (Exception e) {
+        }
     }//GEN-LAST:event_jButtonIgualActionPerformed
 
     private void jButtonPiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPiActionPerformed
@@ -755,10 +806,10 @@ public class Vista extends javax.swing.JFrame {
         addNumber("9");
     }//GEN-LAST:event_jButtonNueveActionPerformed
 
-    private void jButtonMultiplicacion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMultiplicacion1ActionPerformed
+    private void jButtonMultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMultiplicacionActionPerformed
         // TODO add your handling code here:
         addNumber("x");
-    }//GEN-LAST:event_jButtonMultiplicacion1ActionPerformed
+    }//GEN-LAST:event_jButtonMultiplicacionActionPerformed
 
     private void jButtonDividoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDividoActionPerformed
         // TODO add your handling code here:
@@ -770,18 +821,94 @@ public class Vista extends javax.swing.JFrame {
         addNumber("%");
     }//GEN-LAST:event_jButtonPorcentajeActionPerformed
 
-    private void jButtonCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCActionPerformed
+    private void jButtonCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCEActionPerformed
         // TODO add your handling code here:
-        txtOperation.setText("");
-        txtResult.setText("");
-    }//GEN-LAST:event_jButtonCActionPerformed
+        String texto = txtOperation.getText().substring(0, txtOperation.getText().length() - 1);
+        txtOperation.setText(texto);
+    }//GEN-LAST:event_jButtonCEActionPerformed
 
     private void jButtonElevadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonElevadoActionPerformed
         // TODO add your handling code here:
         addNumber("^");
     }//GEN-LAST:event_jButtonElevadoActionPerformed
 
-  
+    private void jButtonCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCActionPerformed
+        // TODO add your handling code here:
+        txtOperation.setText("");
+        txtResult.setText("");
+    }//GEN-LAST:event_jButtonCActionPerformed
+
+    boolean modoOscuro = false;
+    private void jButtonCambioColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCambioColorActionPerformed
+        // TODO add your handling code here:
+
+        if (!modoOscuro) {
+
+            jPanel1.setBackground(Color.decode("#e5e4e2"));
+            jPanel2.setBackground(Color.decode("#ffffff"));
+            
+            jButtonCambioColor.setIcon(new ImageIcon(getClass().getResource("/Imagenes/btnClarito.png")));
+
+            cambiarColorTeclasAzul(jButtonCero);
+            cambiarColorTeclasAzul(jButtonUno);
+            cambiarColorTeclasAzul(jButtonDos);
+            cambiarColorTeclasAzul(jButtonTres);
+            cambiarColorTeclasAzul(jButtonCuatro);
+            cambiarColorTeclasAzul(jButtonCinco);
+            cambiarColorTeclasAzul(jButtonSeis);
+            cambiarColorTeclasAzul(jButtonSiete);
+            cambiarColorTeclasAzul(jButtonOcho);
+            cambiarColorTeclasAzul(jButtonNueve);
+
+            cambiarColorTeclasNaranjas(jButtonDivido);
+            cambiarColorTeclasNaranjas(jButtonMultiplicacion);
+            cambiarColorTeclasNaranjas(jButtonResta);
+            cambiarColorTeclasNaranjas(jButtonSuma);
+            cambiarColorTeclasNaranjas(jButtonRaiz);
+            cambiarColorTeclasNaranjas(jButtonFactorial);
+            cambiarColorTeclasNaranjas(jButtonParentesisIzquierdo);
+            cambiarColorTeclasNaranjas(jButtonParentesisDerecho);
+            cambiarColorTeclasNaranjas(jButtonln);
+            cambiarColorTeclasNaranjas(jButtonLog);
+            cambiarColorTeclasNaranjas(jButtonPi);
+            cambiarColorTeclasNaranjas(jButtone);
+            cambiarColorTeclasNaranjas(jButtonPunto);
+
+            cambiarColorTeclasNaranjas(jButtonIgual);
+            jButtonIgual.setIcon(new ImageIcon(getClass().getResource("/Imagenes/BtnClaroNaranja.png")));
+
+            cambiarColorTeclasGris(jButtonC);
+            cambiarColorTeclasGris(jButtonElevado);
+            cambiarColorTeclasGris(jButtonPorcentaje);
+            cambiarColorTeclasGris(jButtonCE);
+
+            cambiarColorTeclasGris(JButtonAvanzado);
+            JButtonAvanzado.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/BtnClaroGray.png")));
+            modoOscuro = true;
+
+        } else {
+            Vista frame = new Vista();
+            this.dispose();
+            frame.setVisible(true);
+        }
+    }//GEN-LAST:event_jButtonCambioColorActionPerformed
+
+    public void cambiarColorTeclasAzul(JButton btn) {
+        btn.setIcon(new ImageIcon(getClass().getResource("/Imagenes/BtnClaro.png")));
+        btn.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/BtnClaroOn.png")));
+    }
+
+    public void cambiarColorTeclasNaranjas(JButton btn) {
+        btn.setIcon(new ImageIcon(getClass().getResource("/Imagenes/BtnClaro.png")));
+        btn.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/BtnClaronNaranjaOn.png")));
+    }
+
+    public void cambiarColorTeclasGris(JButton btn) {
+        btn.setForeground(Color.decode("#000000"));
+        btn.setIcon(new ImageIcon(getClass().getResource("/Imagenes/BtnClaro.png")));
+        btn.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/BtnClaroGris.png")));
+    }
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -813,14 +940,16 @@ public class Vista extends javax.swing.JFrame {
             }
         });
     }
-    
-    public void addNumber(String digito){
+
+    public void addNumber(String digito) {
         txtOperation.setText(txtOperation.getText() + digito);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton JButtonAvanzado;
     private javax.swing.JButton jButtonC;
+    private javax.swing.JButton jButtonCE;
+    private javax.swing.JButton jButtonCambioColor;
     private javax.swing.JButton jButtonCero;
     private javax.swing.JButton jButtonCinco;
     private javax.swing.JButton jButtonCuatro;
@@ -830,7 +959,7 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JButton jButtonFactorial;
     private javax.swing.JButton jButtonIgual;
     private javax.swing.JButton jButtonLog;
-    private javax.swing.JButton jButtonMultiplicacion1;
+    private javax.swing.JButton jButtonMultiplicacion;
     private javax.swing.JButton jButtonNueve;
     private javax.swing.JButton jButtonOcho;
     private javax.swing.JButton jButtonParentesisDerecho;
