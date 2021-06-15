@@ -55,19 +55,23 @@ public class Vista extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(21, 13, 91));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        txtOperation.setFont(new java.awt.Font("DejaVu Sans Mono", 1, 20)); // NOI18N
+        txtOperation.setForeground(new java.awt.Color(211, 190, 0));
         txtOperation.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jPanel1.add(txtOperation, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 220, 40));
+        jPanel1.add(txtOperation, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 230, 40));
 
+        txtResult.setFont(new java.awt.Font("DejaVu Sans Mono", 1, 36)); // NOI18N
+        txtResult.setForeground(new java.awt.Color(0, 205, 205));
         txtResult.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jPanel1.add(txtResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 340, 70));
+        jPanel1.add(txtResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 300, 60));
 
         jPanel2.setBackground(new java.awt.Color(12, 9, 65));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         JButtonAvanzado.setFont(new java.awt.Font("DejaVu Sans Light", 3, 14)); // NOI18N
         JButtonAvanzado.setForeground(new java.awt.Color(255, 255, 255));
-        JButtonAvanzado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnAvanzado.png"))); // NOI18N
-        JButtonAvanzado.setText("AVANZADO");
+        JButtonAvanzado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnAvanzado.jpg"))); // NOI18N
+        JButtonAvanzado.setText("AVANZADO ");
         JButtonAvanzado.setActionCommand("Avanzado");
         JButtonAvanzado.setBorder(null);
         JButtonAvanzado.setFocusPainted(false);
@@ -78,7 +82,7 @@ public class Vista extends javax.swing.JFrame {
                 JButtonAvanzadoActionPerformed(evt);
             }
         });
-        jPanel2.add(JButtonAvanzado, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 100, 50));
+        jPanel2.add(JButtonAvanzado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 100, 50));
 
         jButtonIgual.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonIgual.setForeground(new java.awt.Color(211, 169, 0));
@@ -99,7 +103,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonIgualActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonIgual, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 50, 50));
+        jPanel2.add(jButtonIgual, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 220, 50, 50));
 
         jButtonTres.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonTres.setForeground(new java.awt.Color(0, 205, 205));
@@ -118,9 +122,10 @@ public class Vista extends javax.swing.JFrame {
                 jButtonTresActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonTres, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 50, 50));
+        jPanel2.add(jButtonTres, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 50, 50));
 
         jButtonElevado.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonElevado.setForeground(new java.awt.Color(255, 255, 255));
         jButtonElevado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
         jButtonElevado.setText("^");
         jButtonElevado.setBorderPainted(false);
@@ -136,9 +141,10 @@ public class Vista extends javax.swing.JFrame {
                 jButtonElevadoActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonElevado, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 50, 50));
+        jPanel2.add(jButtonElevado, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 50, 50));
 
         jButtonPorcentaje.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonPorcentaje.setForeground(new java.awt.Color(255, 255, 255));
         jButtonPorcentaje.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
         jButtonPorcentaje.setText("%");
         jButtonPorcentaje.setBorderPainted(false);
@@ -154,7 +160,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonPorcentajeActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonPorcentaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 50, 50));
+        jPanel2.add(jButtonPorcentaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 50, 50));
 
         jButtonDivido.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonDivido.setForeground(new java.awt.Color(211, 169, 0));
@@ -175,7 +181,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonDividoActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonDivido, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 50, 50));
+        jPanel2.add(jButtonDivido, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, 50, 50));
 
         jButtonFactorial.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonFactorial.setForeground(new java.awt.Color(211, 169, 0));
@@ -196,7 +202,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonFactorialActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonFactorial, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 50, 50));
+        jPanel2.add(jButtonFactorial, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 50, 50));
 
         jButtonResta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonResta.setForeground(new java.awt.Color(211, 169, 0));
@@ -217,7 +223,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonRestaActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonResta, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 50, 50));
+        jPanel2.add(jButtonResta, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, 50, 50));
 
         jButtonSuma.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonSuma.setForeground(new java.awt.Color(211, 169, 0));
@@ -238,9 +244,10 @@ public class Vista extends javax.swing.JFrame {
                 jButtonSumaActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonSuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 50, 50));
+        jPanel2.add(jButtonSuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, 50, 50));
 
         jButtonC.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonC.setForeground(new java.awt.Color(255, 255, 255));
         jButtonC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
         jButtonC.setText("C");
         jButtonC.setAutoscrolls(true);
@@ -256,7 +263,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonCActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonC, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 50, 50));
+        jPanel2.add(jButtonC, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 50, 50));
 
         jButtonNueve.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonNueve.setForeground(new java.awt.Color(0, 205, 205));
@@ -275,7 +282,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonNueveActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonNueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, 50, 50));
+        jPanel2.add(jButtonNueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 70, 50, 50));
 
         jButtonDos.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonDos.setForeground(new java.awt.Color(0, 205, 205));
@@ -294,7 +301,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonDosActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonDos, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 50, 50));
+        jPanel2.add(jButtonDos, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 50, 50));
 
         jButtonPunto.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonPunto.setForeground(new java.awt.Color(0, 205, 205));
@@ -313,7 +320,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonPuntoActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonPunto, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 50, 50));
+        jPanel2.add(jButtonPunto, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 50, 50));
 
         jButtonCuatro.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonCuatro.setForeground(new java.awt.Color(0, 205, 205));
@@ -332,7 +339,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonCuatroActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonCuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 50, 50));
+        jPanel2.add(jButtonCuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 50, 50));
 
         jButtonCinco.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonCinco.setForeground(new java.awt.Color(0, 205, 205));
@@ -351,7 +358,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonCincoActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonCinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 50, 50));
+        jPanel2.add(jButtonCinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 120, 50, 50));
 
         jButtonSeis.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonSeis.setForeground(new java.awt.Color(0, 205, 205));
@@ -370,7 +377,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonSeisActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonSeis, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 50, 50));
+        jPanel2.add(jButtonSeis, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 120, 50, 50));
 
         jButtonSiete.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonSiete.setForeground(new java.awt.Color(0, 205, 205));
@@ -389,7 +396,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonSieteActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonSiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 50, 50));
+        jPanel2.add(jButtonSiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 50, 50));
 
         jButtonOcho.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonOcho.setForeground(new java.awt.Color(0, 205, 205));
@@ -408,7 +415,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonOchoActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonOcho, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, 50, 50));
+        jPanel2.add(jButtonOcho, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, 50, 50));
 
         jButtonUno.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonUno.setForeground(new java.awt.Color(0, 205, 205));
@@ -427,7 +434,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonUnoActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 50, 50));
+        jPanel2.add(jButtonUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 50, 50));
 
         jButtonCero.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonCero.setForeground(new java.awt.Color(0, 205, 205));
@@ -446,7 +453,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonCeroActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonCero, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, 50, 50));
+        jPanel2.add(jButtonCero, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, 50, 50));
 
         jButtonMultiplicacion1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonMultiplicacion1.setForeground(new java.awt.Color(211, 169, 0));
@@ -467,7 +474,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonMultiplicacion1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonMultiplicacion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 50, 50));
+        jPanel2.add(jButtonMultiplicacion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 70, 50, 50));
 
         jButtonRaiz.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonRaiz.setForeground(new java.awt.Color(211, 169, 0));
@@ -488,7 +495,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonRaizActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonRaiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 50, 50));
+        jPanel2.add(jButtonRaiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 50, 50));
 
         jButtonParentesisIzquierdo.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonParentesisIzquierdo.setForeground(new java.awt.Color(211, 169, 0));
@@ -509,7 +516,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonParentesisIzquierdoActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonParentesisIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 50, 50));
+        jPanel2.add(jButtonParentesisIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 50, 50));
 
         jButtonParentesisDerecho.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonParentesisDerecho.setForeground(new java.awt.Color(211, 169, 0));
@@ -530,7 +537,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonParentesisDerechoActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonParentesisDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 50, 50));
+        jPanel2.add(jButtonParentesisDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 50, 50));
 
         jButtonln.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButtonln.setForeground(new java.awt.Color(211, 169, 0));
@@ -551,7 +558,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonlnActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonln, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 50, 50));
+        jPanel2.add(jButtonln, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 50, 50));
 
         jButtonLog.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
         jButtonLog.setForeground(new java.awt.Color(211, 169, 0));
@@ -572,7 +579,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonLogActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 50, 50));
+        jPanel2.add(jButtonLog, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 50, 50));
 
         jButtonPi.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonPi.setForeground(new java.awt.Color(211, 169, 0));
@@ -593,7 +600,7 @@ public class Vista extends javax.swing.JFrame {
                 jButtonPiActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonPi, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 50, 50));
+        jPanel2.add(jButtonPi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 50, 50));
 
         jButtone.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtone.setForeground(new java.awt.Color(211, 169, 0));
@@ -614,65 +621,74 @@ public class Vista extends javax.swing.JFrame {
                 jButtoneActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtone, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 50, 50));
+        jPanel2.add(jButtone, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 50, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        setSize(new java.awt.Dimension(390, 520));
+        setSize(new java.awt.Dimension(360, 480));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void JButtonAvanzadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JButtonAvanzadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JButtonAvanzadoActionPerformed
+
+    private void jButtonPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPuntoActionPerformed
+        // TODO add your handling code here:
+        addNumber(".");
+    }//GEN-LAST:event_jButtonPuntoActionPerformed
 
     private void jButtonIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIgualActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonIgualActionPerformed
 
-    private void jButtonPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPuntoActionPerformed
+    private void jButtonPiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonPuntoActionPerformed
+        addNumber("π");
+    }//GEN-LAST:event_jButtonPiActionPerformed
+
+    private void jButtonlnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonlnActionPerformed
+        // TODO add your handling code here:
+        addNumber("ln");
+    }//GEN-LAST:event_jButtonlnActionPerformed
+
+    private void jButtoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtoneActionPerformed
+        // TODO add your handling code here:a
+        addNumber("e");
+    }//GEN-LAST:event_jButtoneActionPerformed
+
+    private void jButtonLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLogActionPerformed
+        // TODO add your handling code here:a
+        addNumber("log");
+    }//GEN-LAST:event_jButtonLogActionPerformed
 
     private void jButtonCeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCeroActionPerformed
         // TODO add your handling code here:
         addNumber("0");
     }//GEN-LAST:event_jButtonCeroActionPerformed
 
-    private void jButtoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtoneActionPerformed
+    private void jButtonUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonUnoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtoneActionPerformed
-
-    private void jButtonPiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPiActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonPiActionPerformed
-
-    private void jButtonlnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonlnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonlnActionPerformed
-
-    private void jButtonLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLogActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonLogActionPerformed
+        addNumber("1");
+    }//GEN-LAST:event_jButtonUnoActionPerformed
 
     private void jButtonDosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDosActionPerformed
         // TODO add your handling code here:}
         addNumber("2");
     }//GEN-LAST:event_jButtonDosActionPerformed
-
-    private void jButtonUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonUnoActionPerformed
-        // TODO add your handling code here:
-        addNumber("1");
-    }//GEN-LAST:event_jButtonUnoActionPerformed
 
     private void jButtonTresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTresActionPerformed
         // TODO add your handling code here:
@@ -681,10 +697,12 @@ public class Vista extends javax.swing.JFrame {
 
     private void jButtonSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSumaActionPerformed
         // TODO add your handling code here:
+        addNumber("+");
     }//GEN-LAST:event_jButtonSumaActionPerformed
 
     private void jButtonRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRestaActionPerformed
         // TODO add your handling code here:
+        addNumber("-");
     }//GEN-LAST:event_jButtonRestaActionPerformed
 
     private void jButtonSeisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSeisActionPerformed
@@ -704,18 +722,22 @@ public class Vista extends javax.swing.JFrame {
 
     private void jButtonParentesisDerechoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonParentesisDerechoActionPerformed
         // TODO add your handling code here:
+        addNumber(")");
     }//GEN-LAST:event_jButtonParentesisDerechoActionPerformed
 
     private void jButtonParentesisIzquierdoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonParentesisIzquierdoActionPerformed
         // TODO add your handling code here:
+        addNumber("(");
     }//GEN-LAST:event_jButtonParentesisIzquierdoActionPerformed
 
     private void jButtonRaizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRaizActionPerformed
         // TODO add your handling code here:
+        addNumber("√");
     }//GEN-LAST:event_jButtonRaizActionPerformed
 
     private void jButtonFactorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFactorialActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:a
+        addNumber("!");
     }//GEN-LAST:event_jButtonFactorialActionPerformed
 
     private void jButtonSieteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSieteActionPerformed
@@ -735,19 +757,18 @@ public class Vista extends javax.swing.JFrame {
 
     private void jButtonMultiplicacion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMultiplicacion1ActionPerformed
         // TODO add your handling code here:
+        addNumber("x");
     }//GEN-LAST:event_jButtonMultiplicacion1ActionPerformed
 
     private void jButtonDividoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDividoActionPerformed
         // TODO add your handling code here:
+        addNumber("÷");
     }//GEN-LAST:event_jButtonDividoActionPerformed
 
     private void jButtonPorcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPorcentajeActionPerformed
         // TODO add your handling code here:
+        addNumber("%");
     }//GEN-LAST:event_jButtonPorcentajeActionPerformed
-
-    private void jButtonElevadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonElevadoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonElevadoActionPerformed
 
     private void jButtonCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCActionPerformed
         // TODO add your handling code here:
@@ -755,9 +776,10 @@ public class Vista extends javax.swing.JFrame {
         txtResult.setText("");
     }//GEN-LAST:event_jButtonCActionPerformed
 
-    private void JButtonAvanzadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JButtonAvanzadoActionPerformed
+    private void jButtonElevadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonElevadoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_JButtonAvanzadoActionPerformed
+        addNumber("^");
+    }//GEN-LAST:event_jButtonElevadoActionPerformed
 
   
     public static void main(String args[]) {
