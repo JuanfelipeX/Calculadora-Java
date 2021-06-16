@@ -29,7 +29,7 @@ public class Vista extends javax.swing.JFrame {
         jButtonIgual = new javax.swing.JButton();
         jButtonTres = new javax.swing.JButton();
         jButtonElevado = new javax.swing.JButton();
-        jButtonPorcentaje = new javax.swing.JButton();
+        jButtonMod = new javax.swing.JButton();
         jButtonDivido = new javax.swing.JButton();
         jButtonFactorial = new javax.swing.JButton();
         jButtonResta = new javax.swing.JButton();
@@ -169,24 +169,24 @@ public class Vista extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonElevado, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 50, 50));
 
-        jButtonPorcentaje.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jButtonPorcentaje.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonPorcentaje.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
-        jButtonPorcentaje.setText("%");
-        jButtonPorcentaje.setBorderPainted(false);
-        jButtonPorcentaje.setContentAreaFilled(false);
-        jButtonPorcentaje.setDefaultCapable(false);
-        jButtonPorcentaje.setFocusPainted(false);
-        jButtonPorcentaje.setFocusable(false);
-        jButtonPorcentaje.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonPorcentaje.setRequestFocusEnabled(false);
-        jButtonPorcentaje.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnGrisOn.png"))); // NOI18N
-        jButtonPorcentaje.addActionListener(new java.awt.event.ActionListener() {
+        jButtonMod.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonMod.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonMod.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
+        jButtonMod.setText("%");
+        jButtonMod.setBorderPainted(false);
+        jButtonMod.setContentAreaFilled(false);
+        jButtonMod.setDefaultCapable(false);
+        jButtonMod.setFocusPainted(false);
+        jButtonMod.setFocusable(false);
+        jButtonMod.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonMod.setRequestFocusEnabled(false);
+        jButtonMod.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnGrisOn.png"))); // NOI18N
+        jButtonMod.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonPorcentajeActionPerformed(evt);
+                jButtonModActionPerformed(evt);
             }
         });
-        jPanel2.add(jButtonPorcentaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 50, 50));
+        jPanel2.add(jButtonMod, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 50, 50));
 
         jButtonDivido.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonDivido.setForeground(new java.awt.Color(211, 169, 0));
@@ -484,7 +484,7 @@ public class Vista extends javax.swing.JFrame {
         jButtonMultiplicacion.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButtonMultiplicacion.setForeground(new java.awt.Color(211, 169, 0));
         jButtonMultiplicacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
-        jButtonMultiplicacion.setText("x");
+        jButtonMultiplicacion.setText("*");
         jButtonMultiplicacion.setAutoscrolls(true);
         jButtonMultiplicacion.setBorderPainted(false);
         jButtonMultiplicacion.setContentAreaFilled(false);
@@ -808,7 +808,7 @@ public class Vista extends javax.swing.JFrame {
 
     private void jButtonMultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMultiplicacionActionPerformed
         // TODO add your handling code here:
-        addNumber("x");
+        addNumber("*");
     }//GEN-LAST:event_jButtonMultiplicacionActionPerformed
 
     private void jButtonDividoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDividoActionPerformed
@@ -816,10 +816,10 @@ public class Vista extends javax.swing.JFrame {
         addNumber("÷");
     }//GEN-LAST:event_jButtonDividoActionPerformed
 
-    private void jButtonPorcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPorcentajeActionPerformed
+    private void jButtonModActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonModActionPerformed
         // TODO add your handling code here:
-        addNumber("%");
-    }//GEN-LAST:event_jButtonPorcentajeActionPerformed
+        addNumber("mod");
+    }//GEN-LAST:event_jButtonModActionPerformed
 
     private void jButtonCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCEActionPerformed
         // TODO add your handling code here:
@@ -879,7 +879,7 @@ public class Vista extends javax.swing.JFrame {
 
             cambiarColorTeclasGris(jButtonC);
             cambiarColorTeclasGris(jButtonElevado);
-            cambiarColorTeclasGris(jButtonPorcentaje);
+            cambiarColorTeclasGris(jButtonMod);
             cambiarColorTeclasGris(jButtonCE);
 
             cambiarColorTeclasGris(JButtonAvanzado);
@@ -959,13 +959,13 @@ public class Vista extends javax.swing.JFrame {
     private javax.swing.JButton jButtonFactorial;
     private javax.swing.JButton jButtonIgual;
     private javax.swing.JButton jButtonLog;
+    private javax.swing.JButton jButtonMod;
     private javax.swing.JButton jButtonMultiplicacion;
     private javax.swing.JButton jButtonNueve;
     private javax.swing.JButton jButtonOcho;
     private javax.swing.JButton jButtonParentesisDerecho;
     private javax.swing.JButton jButtonParentesisIzquierdo;
     private javax.swing.JButton jButtonPi;
-    private javax.swing.JButton jButtonPorcentaje;
     private javax.swing.JButton jButtonPunto;
     private javax.swing.JButton jButtonRaiz;
     private javax.swing.JButton jButtonResta;
