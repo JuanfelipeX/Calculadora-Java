@@ -169,10 +169,10 @@ public class Vista extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonElevado, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 50, 50));
 
-        jButtonMod.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButtonMod.setFont(new java.awt.Font("Dialog", 1, 9)); // NOI18N
         jButtonMod.setForeground(new java.awt.Color(255, 255, 255));
         jButtonMod.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btnC.png"))); // NOI18N
-        jButtonMod.setText("%");
+        jButtonMod.setText("Mod");
         jButtonMod.setBorderPainted(false);
         jButtonMod.setContentAreaFilled(false);
         jButtonMod.setDefaultCapable(false);
@@ -708,22 +708,26 @@ public class Vista extends javax.swing.JFrame {
 
     private void jButtonPiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPiActionPerformed
         // TODO add your handling code here:
-        addNumber("π");
+        double pi = Math.PI;
+        String cadenaPi = String.valueOf(pi);
+        addNumber(cadenaPi);
     }//GEN-LAST:event_jButtonPiActionPerformed
 
     private void jButtonlnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonlnActionPerformed
         // TODO add your handling code here:
-        addNumber("ln");
+        addNumber("Math.log(");
     }//GEN-LAST:event_jButtonlnActionPerformed
 
     private void jButtoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtoneActionPerformed
         // TODO add your handling code here:a
-        addNumber("e");
+        double e = Math.E;
+        String cadenaE = String.valueOf(e);
+        addNumber(cadenaE);
     }//GEN-LAST:event_jButtoneActionPerformed
 
     private void jButtonLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLogActionPerformed
         // TODO add your handling code here:a
-        addNumber("log");
+        addNumber("Math.log10()");  //la idea es addNumber("log( " + Math.log10((evt.EntradaDelDigito)));
     }//GEN-LAST:event_jButtonLogActionPerformed
 
     private void jButtonCeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCeroActionPerformed
@@ -783,12 +787,13 @@ public class Vista extends javax.swing.JFrame {
 
     private void jButtonRaizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRaizActionPerformed
         // TODO add your handling code here:
-        addNumber("√");
+        addNumber("Math.sqrt(");
     }//GEN-LAST:event_jButtonRaizActionPerformed
 
     private void jButtonFactorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFactorialActionPerformed
         // TODO add your handling code here:a
         addNumber("!");
+        
     }//GEN-LAST:event_jButtonFactorialActionPerformed
 
     private void jButtonSieteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSieteActionPerformed
@@ -818,7 +823,7 @@ public class Vista extends javax.swing.JFrame {
 
     private void jButtonModActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonModActionPerformed
         // TODO add your handling code here:
-        addNumber("mod");
+        addNumber("%");
     }//GEN-LAST:event_jButtonModActionPerformed
 
     private void jButtonCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCEActionPerformed
@@ -829,7 +834,7 @@ public class Vista extends javax.swing.JFrame {
 
     private void jButtonElevadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonElevadoActionPerformed
         // TODO add your handling code here:
-        addNumber("^");
+        addNumber("Math.pow(" + "," + " )");
     }//GEN-LAST:event_jButtonElevadoActionPerformed
 
     private void jButtonCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCActionPerformed
